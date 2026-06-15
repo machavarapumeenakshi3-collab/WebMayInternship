@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .product{
+            display: grid;
+            /* grid-template-columns: repeat(No.of column-Max(12),Size of each column); */
+            /* grid-template-columns: repeat(6,1fr); */
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            background-color: skyblue;
+            padding: 12px;
+            gap: 20px;
+            
+        }
+
+        .box{
+            border: 2px solid black;
+            background-color: palegreen;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+
+        <div class="box">CAKE</div>
+        <div class="box">$25</div>
+        <div class="box">COOKIE</div>
+        <div class="box">$20</div>
+        <div class="box">PASTRY</div>
+        <div class="box">$15</div>
+
+    </div>
+</body>
+</html>
